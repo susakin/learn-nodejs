@@ -1,0 +1,1045 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,">
+		<meta name="format-detection" content="telephone=no" />
+		<meta charset="UTF-8">
+		<meta name="description" content="sasukei | 徐文的个人博客">
+		<meta name="Keywords" Content="sasukei,徐文,博客,前端">
+		<link href="style/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style/index.css">
+		<link href="favicon.ico" rel="shortcut icon">
+	</head>
+	<body>
+		<header id="header" class="layer0">
+			<div class="header-wrapper">
+				<div class="spinner-icon"></div>
+				<div class="header-content">
+					<section class="describe">
+						<img src="images/avatar.jpg">
+						<a href="#page/1">
+							<hgroup>
+								<h1>徐文的博客</h1>
+								<h2>Sasukei's Blog</h2>
+							</hgroup>
+						</a>
+					</section>
+					<section class="switch-board">
+						<ul>
+							<li data-title="返回主页">
+								<i class="fa fa-home" module="page/1"></i>
+							</li>
+							<li data-title="留言版">
+								<i class="fa fa-comments" module="message/1"></i>
+							</li>
+							<li data-title="切换字体风格">
+								<i class="fa fa-font"></i>
+							</li>
+							<li data-title="夜间模式">
+								<i class="fa fa-moon-o"></i>
+							</li>
+							<li data-title="我的游戏">
+								<a href="/game/game.html" target="_blank"><i class="fa fa-gamepad"></i></a>
+							</li>
+							<li data-title="全屏模式">
+								<i class="fa fa-expand"></i>
+								<i class="fa fa-compress"></i>
+							</li>
+						</ul>
+					</section>
+					<section class="self-intro">
+						<p>"故不积跬步，无以至千里；不积小流，无以成江海。"好好学习，天天向上。热爱生活，认真工作。为成为一名优秀的程序员而努力奋斗。</p>
+					</section>
+					<section class="comments">
+						<ul></ul>
+						<div class="button">
+							<a href="#message/1">
+								<i class="fa fa-bars"></i>查看更多
+							</a>
+							<a href="#message/1">
+								<i class="fa fa-pencil-square-o"></i>写新留言
+							</a>
+						</div>
+					</section>
+					<section class="study">
+						<a href="http://www.acfun.cn/" targe="_blank" class="logo"><img src="images/acfun_logo.png"></a>
+						<ul class="study-list">
+						</ul>
+						<p>fun一下。<font class="study-reload">换一批</font></p>
+					</section>
+					<section class="footer">
+						<p>Sasukei's blog powered by nodejs.</p>
+					</section>
+				</div>
+			</div>
+		</header>
+		<div class="container main">
+		</div>
+	</body>
+	<script src="script/lib/bowl/bowl.js"></script>
+	<script>
+		bowljs.config({
+			libPath: 'script/lib',
+			appPath: 'script/app',
+			debug: false
+		});
+		require('/main/');
+	</script>
+</html><!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,">
+		<meta name="format-detection" content="telephone=no" />
+		<meta charset="UTF-8">
+		<meta name="description" content="sasukei | 徐文的个人博客">
+		<meta name="Keywords" Content="sasukei,徐文,博客,前端">
+		<link href="style/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style/index.css">
+		<link href="favicon.ico" rel="shortcut icon">
+	</head>
+	<body>
+		<header id="header" class="layer0">
+			<div class="header-wrapper">
+				<div class="spinner-icon"></div>
+				<div class="header-content">
+					<section class="describe">
+						<img src="images/avatar.jpg">
+						<a href="#page/1">
+							<hgroup>
+								<h1>徐文的博客</h1>
+								<h2>Sasukei's Blog</h2>
+							</hgroup>
+						</a>
+					</section>
+					<section class="switch-board">
+						<ul>
+							<li data-title="返回主页">
+								<i class="fa fa-home" module="page/1"></i>
+							</li>
+							<li data-title="留言版">
+								<i class="fa fa-comments" module="message/1"></i>
+							</li>
+							<li data-title="切换字体风格">
+								<i class="fa fa-font"></i>
+							</li>
+							<li data-title="夜间模式">
+								<i class="fa fa-moon-o"></i>
+							</li>
+							<li data-title="我的游戏">
+								<a href="/game/game.html" target="_blank"><i class="fa fa-gamepad"></i></a>
+							</li>
+							<li data-title="全屏模式">
+								<i class="fa fa-expand"></i>
+								<i class="fa fa-compress"></i>
+							</li>
+						</ul>
+					</section>
+					<section class="self-intro">
+						<p>"故不积跬步，无以至千里；不积小流，无以成江海。"好好学习，天天向上。热爱生活，认真工作。为成为一名优秀的程序员而努力奋斗。</p>
+					</section>
+					<section class="comments">
+						<ul></ul>
+						<div class="button">
+							<a href="#message/1">
+								<i class="fa fa-bars"></i>查看更多
+							</a>
+							<a href="#message/1">
+								<i class="fa fa-pencil-square-o"></i>写新留言
+							</a>
+						</div>
+					</section>
+					<section class="study">
+						<a href="http://www.acfun.cn/" targe="_blank" class="logo"><img src="images/acfun_logo.png"></a>
+						<ul class="study-list">
+						</ul>
+						<p>fun一下。<font class="study-reload">换一批</font></p>
+					</section>
+					<section class="footer">
+						<p>Sasukei's blog powered by nodejs.</p>
+					</section>
+				</div>
+			</div>
+		</header>
+		<div class="container main">
+		</div>
+	</body>
+	<script src="script/lib/bowl/bowl.js"></script>
+	<script>
+		bowljs.config({
+			libPath: 'script/lib',
+			appPath: 'script/app',
+			debug: false
+		});
+		require('/main/');
+	</script>
+</html><!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,">
+		<meta name="format-detection" content="telephone=no" />
+		<meta charset="UTF-8">
+		<meta name="description" content="sasukei | 徐文的个人博客">
+		<meta name="Keywords" Content="sasukei,徐文,博客,前端">
+		<link href="style/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style/index.css">
+		<link href="favicon.ico" rel="shortcut icon">
+	</head>
+	<body>
+		<header id="header" class="layer0">
+			<div class="header-wrapper">
+				<div class="spinner-icon"></div>
+				<div class="header-content">
+					<section class="describe">
+						<img src="images/avatar.jpg">
+						<a href="#page/1">
+							<hgroup>
+								<h1>徐文的博客</h1>
+								<h2>Sasukei's Blog</h2>
+							</hgroup>
+						</a>
+					</section>
+					<section class="switch-board">
+						<ul>
+							<li data-title="返回主页">
+								<i class="fa fa-home" module="page/1"></i>
+							</li>
+							<li data-title="留言版">
+								<i class="fa fa-comments" module="message/1"></i>
+							</li>
+							<li data-title="切换字体风格">
+								<i class="fa fa-font"></i>
+							</li>
+							<li data-title="夜间模式">
+								<i class="fa fa-moon-o"></i>
+							</li>
+							<li data-title="我的游戏">
+								<a href="/game/game.html" target="_blank"><i class="fa fa-gamepad"></i></a>
+							</li>
+							<li data-title="全屏模式">
+								<i class="fa fa-expand"></i>
+								<i class="fa fa-compress"></i>
+							</li>
+						</ul>
+					</section>
+					<section class="self-intro">
+						<p>"故不积跬步，无以至千里；不积小流，无以成江海。"好好学习，天天向上。热爱生活，认真工作。为成为一名优秀的程序员而努力奋斗。</p>
+					</section>
+					<section class="comments">
+						<ul></ul>
+						<div class="button">
+							<a href="#message/1">
+								<i class="fa fa-bars"></i>查看更多
+							</a>
+							<a href="#message/1">
+								<i class="fa fa-pencil-square-o"></i>写新留言
+							</a>
+						</div>
+					</section>
+					<section class="study">
+						<a href="http://www.acfun.cn/" targe="_blank" class="logo"><img src="images/acfun_logo.png"></a>
+						<ul class="study-list">
+						</ul>
+						<p>fun一下。<font class="study-reload">换一批</font></p>
+					</section>
+					<section class="footer">
+						<p>Sasukei's blog powered by nodejs.</p>
+					</section>
+				</div>
+			</div>
+		</header>
+		<div class="container main">
+		</div>
+	</body>
+	<script src="script/lib/bowl/bowl.js"></script>
+	<script>
+		bowljs.config({
+			libPath: 'script/lib',
+			appPath: 'script/app',
+			debug: false
+		});
+		require('/main/');
+	</script>
+</html><!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,">
+		<meta name="format-detection" content="telephone=no" />
+		<meta charset="UTF-8">
+		<meta name="description" content="sasukei | 徐文的个人博客">
+		<meta name="Keywords" Content="sasukei,徐文,博客,前端">
+		<link href="style/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style/index.css">
+		<link href="favicon.ico" rel="shortcut icon">
+	</head>
+	<body>
+		<header id="header" class="layer0">
+			<div class="header-wrapper">
+				<div class="spinner-icon"></div>
+				<div class="header-content">
+					<section class="describe">
+						<img src="images/avatar.jpg">
+						<a href="#page/1">
+							<hgroup>
+								<h1>徐文的博客</h1>
+								<h2>Sasukei's Blog</h2>
+							</hgroup>
+						</a>
+					</section>
+					<section class="switch-board">
+						<ul>
+							<li data-title="返回主页">
+								<i class="fa fa-home" module="page/1"></i>
+							</li>
+							<li data-title="留言版">
+								<i class="fa fa-comments" module="message/1"></i>
+							</li>
+							<li data-title="切换字体风格">
+								<i class="fa fa-font"></i>
+							</li>
+							<li data-title="夜间模式">
+								<i class="fa fa-moon-o"></i>
+							</li>
+							<li data-title="我的游戏">
+								<a href="/game/game.html" target="_blank"><i class="fa fa-gamepad"></i></a>
+							</li>
+							<li data-title="全屏模式">
+								<i class="fa fa-expand"></i>
+								<i class="fa fa-compress"></i>
+							</li>
+						</ul>
+					</section>
+					<section class="self-intro">
+						<p>"故不积跬步，无以至千里；不积小流，无以成江海。"好好学习，天天向上。热爱生活，认真工作。为成为一名优秀的程序员而努力奋斗。</p>
+					</section>
+					<section class="comments">
+						<ul></ul>
+						<div class="button">
+							<a href="#message/1">
+								<i class="fa fa-bars"></i>查看更多
+							</a>
+							<a href="#message/1">
+								<i class="fa fa-pencil-square-o"></i>写新留言
+							</a>
+						</div>
+					</section>
+					<section class="study">
+						<a href="http://www.acfun.cn/" targe="_blank" class="logo"><img src="images/acfun_logo.png"></a>
+						<ul class="study-list">
+						</ul>
+						<p>fun一下。<font class="study-reload">换一批</font></p>
+					</section>
+					<section class="footer">
+						<p>Sasukei's blog powered by nodejs.</p>
+					</section>
+				</div>
+			</div>
+		</header>
+		<div class="container main">
+		</div>
+	</body>
+	<script src="script/lib/bowl/bowl.js"></script>
+	<script>
+		bowljs.config({
+			libPath: 'script/lib',
+			appPath: 'script/app',
+			debug: false
+		});
+		require('/main/');
+	</script>
+</html><!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,">
+		<meta name="format-detection" content="telephone=no" />
+		<meta charset="UTF-8">
+		<meta name="description" content="sasukei | 徐文的个人博客">
+		<meta name="Keywords" Content="sasukei,徐文,博客,前端">
+		<link href="style/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style/index.css">
+		<link href="favicon.ico" rel="shortcut icon">
+	</head>
+	<body>
+		<header id="header" class="layer0">
+			<div class="header-wrapper">
+				<div class="spinner-icon"></div>
+				<div class="header-content">
+					<section class="describe">
+						<img src="images/avatar.jpg">
+						<a href="#page/1">
+							<hgroup>
+								<h1>徐文的博客</h1>
+								<h2>Sasukei's Blog</h2>
+							</hgroup>
+						</a>
+					</section>
+					<section class="switch-board">
+						<ul>
+							<li data-title="返回主页">
+								<i class="fa fa-home" module="page/1"></i>
+							</li>
+							<li data-title="留言版">
+								<i class="fa fa-comments" module="message/1"></i>
+							</li>
+							<li data-title="切换字体风格">
+								<i class="fa fa-font"></i>
+							</li>
+							<li data-title="夜间模式">
+								<i class="fa fa-moon-o"></i>
+							</li>
+							<li data-title="我的游戏">
+								<a href="/game/game.html" target="_blank"><i class="fa fa-gamepad"></i></a>
+							</li>
+							<li data-title="全屏模式">
+								<i class="fa fa-expand"></i>
+								<i class="fa fa-compress"></i>
+							</li>
+						</ul>
+					</section>
+					<section class="self-intro">
+						<p>"故不积跬步，无以至千里；不积小流，无以成江海。"好好学习，天天向上。热爱生活，认真工作。为成为一名优秀的程序员而努力奋斗。</p>
+					</section>
+					<section class="comments">
+						<ul></ul>
+						<div class="button">
+							<a href="#message/1">
+								<i class="fa fa-bars"></i>查看更多
+							</a>
+							<a href="#message/1">
+								<i class="fa fa-pencil-square-o"></i>写新留言
+							</a>
+						</div>
+					</section>
+					<section class="study">
+						<a href="http://www.acfun.cn/" targe="_blank" class="logo"><img src="images/acfun_logo.png"></a>
+						<ul class="study-list">
+						</ul>
+						<p>fun一下。<font class="study-reload">换一批</font></p>
+					</section>
+					<section class="footer">
+						<p>Sasukei's blog powered by nodejs.</p>
+					</section>
+				</div>
+			</div>
+		</header>
+		<div class="container main">
+		</div>
+	</body>
+	<script src="script/lib/bowl/bowl.js"></script>
+	<script>
+		bowljs.config({
+			libPath: 'script/lib',
+			appPath: 'script/app',
+			debug: false
+		});
+		require('/main/');
+	</script>
+</html><!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,">
+		<meta name="format-detection" content="telephone=no" />
+		<meta charset="UTF-8">
+		<meta name="description" content="sasukei | 徐文的个人博客">
+		<meta name="Keywords" Content="sasukei,徐文,博客,前端">
+		<link href="style/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style/index.css">
+		<link href="favicon.ico" rel="shortcut icon">
+	</head>
+	<body>
+		<header id="header" class="layer0">
+			<div class="header-wrapper">
+				<div class="spinner-icon"></div>
+				<div class="header-content">
+					<section class="describe">
+						<img src="images/avatar.jpg">
+						<a href="#page/1">
+							<hgroup>
+								<h1>徐文的博客</h1>
+								<h2>Sasukei's Blog</h2>
+							</hgroup>
+						</a>
+					</section>
+					<section class="switch-board">
+						<ul>
+							<li data-title="返回主页">
+								<i class="fa fa-home" module="page/1"></i>
+							</li>
+							<li data-title="留言版">
+								<i class="fa fa-comments" module="message/1"></i>
+							</li>
+							<li data-title="切换字体风格">
+								<i class="fa fa-font"></i>
+							</li>
+							<li data-title="夜间模式">
+								<i class="fa fa-moon-o"></i>
+							</li>
+							<li data-title="我的游戏">
+								<a href="/game/game.html" target="_blank"><i class="fa fa-gamepad"></i></a>
+							</li>
+							<li data-title="全屏模式">
+								<i class="fa fa-expand"></i>
+								<i class="fa fa-compress"></i>
+							</li>
+						</ul>
+					</section>
+					<section class="self-intro">
+						<p>"故不积跬步，无以至千里；不积小流，无以成江海。"好好学习，天天向上。热爱生活，认真工作。为成为一名优秀的程序员而努力奋斗。</p>
+					</section>
+					<section class="comments">
+						<ul></ul>
+						<div class="button">
+							<a href="#message/1">
+								<i class="fa fa-bars"></i>查看更多
+							</a>
+							<a href="#message/1">
+								<i class="fa fa-pencil-square-o"></i>写新留言
+							</a>
+						</div>
+					</section>
+					<section class="study">
+						<a href="http://www.acfun.cn/" targe="_blank" class="logo"><img src="images/acfun_logo.png"></a>
+						<ul class="study-list">
+						</ul>
+						<p>fun一下。<font class="study-reload">换一批</font></p>
+					</section>
+					<section class="footer">
+						<p>Sasukei's blog powered by nodejs.</p>
+					</section>
+				</div>
+			</div>
+		</header>
+		<div class="container main">
+		</div>
+	</body>
+	<script src="script/lib/bowl/bowl.js"></script>
+	<script>
+		bowljs.config({
+			libPath: 'script/lib',
+			appPath: 'script/app',
+			debug: false
+		});
+		require('/main/');
+	</script>
+</html><!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,">
+		<meta name="format-detection" content="telephone=no" />
+		<meta charset="UTF-8">
+		<meta name="description" content="sasukei | 徐文的个人博客">
+		<meta name="Keywords" Content="sasukei,徐文,博客,前端">
+		<link href="style/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style/index.css">
+		<link href="favicon.ico" rel="shortcut icon">
+	</head>
+	<body>
+		<header id="header" class="layer0">
+			<div class="header-wrapper">
+				<div class="spinner-icon"></div>
+				<div class="header-content">
+					<section class="describe">
+						<img src="images/avatar.jpg">
+						<a href="#page/1">
+							<hgroup>
+								<h1>徐文的博客</h1>
+								<h2>Sasukei's Blog</h2>
+							</hgroup>
+						</a>
+					</section>
+					<section class="switch-board">
+						<ul>
+							<li data-title="返回主页">
+								<i class="fa fa-home" module="page/1"></i>
+							</li>
+							<li data-title="留言版">
+								<i class="fa fa-comments" module="message/1"></i>
+							</li>
+							<li data-title="切换字体风格">
+								<i class="fa fa-font"></i>
+							</li>
+							<li data-title="夜间模式">
+								<i class="fa fa-moon-o"></i>
+							</li>
+							<li data-title="我的游戏">
+								<a href="/game/game.html" target="_blank"><i class="fa fa-gamepad"></i></a>
+							</li>
+							<li data-title="全屏模式">
+								<i class="fa fa-expand"></i>
+								<i class="fa fa-compress"></i>
+							</li>
+						</ul>
+					</section>
+					<section class="self-intro">
+						<p>"故不积跬步，无以至千里；不积小流，无以成江海。"好好学习，天天向上。热爱生活，认真工作。为成为一名优秀的程序员而努力奋斗。</p>
+					</section>
+					<section class="comments">
+						<ul></ul>
+						<div class="button">
+							<a href="#message/1">
+								<i class="fa fa-bars"></i>查看更多
+							</a>
+							<a href="#message/1">
+								<i class="fa fa-pencil-square-o"></i>写新留言
+							</a>
+						</div>
+					</section>
+					<section class="study">
+						<a href="http://www.acfun.cn/" targe="_blank" class="logo"><img src="images/acfun_logo.png"></a>
+						<ul class="study-list">
+						</ul>
+						<p>fun一下。<font class="study-reload">换一批</font></p>
+					</section>
+					<section class="footer">
+						<p>Sasukei's blog powered by nodejs.</p>
+					</section>
+				</div>
+			</div>
+		</header>
+		<div class="container main">
+		</div>
+	</body>
+	<script src="script/lib/bowl/bowl.js"></script>
+	<script>
+		bowljs.config({
+			libPath: 'script/lib',
+			appPath: 'script/app',
+			debug: false
+		});
+		require('/main/');
+	</script>
+</html><!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,">
+		<meta name="format-detection" content="telephone=no" />
+		<meta charset="UTF-8">
+		<meta name="description" content="sasukei | 徐文的个人博客">
+		<meta name="Keywords" Content="sasukei,徐文,博客,前端">
+		<link href="style/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style/index.css">
+		<link href="favicon.ico" rel="shortcut icon">
+	</head>
+	<body>
+		<header id="header" class="layer0">
+			<div class="header-wrapper">
+				<div class="spinner-icon"></div>
+				<div class="header-content">
+					<section class="describe">
+						<img src="images/avatar.jpg">
+						<a href="#page/1">
+							<hgroup>
+								<h1>徐文的博客</h1>
+								<h2>Sasukei's Blog</h2>
+							</hgroup>
+						</a>
+					</section>
+					<section class="switch-board">
+						<ul>
+							<li data-title="返回主页">
+								<i class="fa fa-home" module="page/1"></i>
+							</li>
+							<li data-title="留言版">
+								<i class="fa fa-comments" module="message/1"></i>
+							</li>
+							<li data-title="切换字体风格">
+								<i class="fa fa-font"></i>
+							</li>
+							<li data-title="夜间模式">
+								<i class="fa fa-moon-o"></i>
+							</li>
+							<li data-title="我的游戏">
+								<a href="/game/game.html" target="_blank"><i class="fa fa-gamepad"></i></a>
+							</li>
+							<li data-title="全屏模式">
+								<i class="fa fa-expand"></i>
+								<i class="fa fa-compress"></i>
+							</li>
+						</ul>
+					</section>
+					<section class="self-intro">
+						<p>"故不积跬步，无以至千里；不积小流，无以成江海。"好好学习，天天向上。热爱生活，认真工作。为成为一名优秀的程序员而努力奋斗。</p>
+					</section>
+					<section class="comments">
+						<ul></ul>
+						<div class="button">
+							<a href="#message/1">
+								<i class="fa fa-bars"></i>查看更多
+							</a>
+							<a href="#message/1">
+								<i class="fa fa-pencil-square-o"></i>写新留言
+							</a>
+						</div>
+					</section>
+					<section class="study">
+						<a href="http://www.acfun.cn/" targe="_blank" class="logo"><img src="images/acfun_logo.png"></a>
+						<ul class="study-list">
+						</ul>
+						<p>fun一下。<font class="study-reload">换一批</font></p>
+					</section>
+					<section class="footer">
+						<p>Sasukei's blog powered by nodejs.</p>
+					</section>
+				</div>
+			</div>
+		</header>
+		<div class="container main">
+		</div>
+	</body>
+	<script src="script/lib/bowl/bowl.js"></script>
+	<script>
+		bowljs.config({
+			libPath: 'script/lib',
+			appPath: 'script/app',
+			debug: false
+		});
+		require('/main/');
+	</script>
+</html><!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,">
+		<meta name="format-detection" content="telephone=no" />
+		<meta charset="UTF-8">
+		<meta name="description" content="sasukei | 徐文的个人博客">
+		<meta name="Keywords" Content="sasukei,徐文,博客,前端">
+		<link href="style/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style/index.css">
+		<link href="favicon.ico" rel="shortcut icon">
+	</head>
+	<body>
+		<header id="header" class="layer0">
+			<div class="header-wrapper">
+				<div class="spinner-icon"></div>
+				<div class="header-content">
+					<section class="describe">
+						<img src="images/avatar.jpg">
+						<a href="#page/1">
+							<hgroup>
+								<h1>徐文的博客</h1>
+								<h2>Sasukei's Blog</h2>
+							</hgroup>
+						</a>
+					</section>
+					<section class="switch-board">
+						<ul>
+							<li data-title="返回主页">
+								<i class="fa fa-home" module="page/1"></i>
+							</li>
+							<li data-title="留言版">
+								<i class="fa fa-comments" module="message/1"></i>
+							</li>
+							<li data-title="切换字体风格">
+								<i class="fa fa-font"></i>
+							</li>
+							<li data-title="夜间模式">
+								<i class="fa fa-moon-o"></i>
+							</li>
+							<li data-title="我的游戏">
+								<a href="/game/game.html" target="_blank"><i class="fa fa-gamepad"></i></a>
+							</li>
+							<li data-title="全屏模式">
+								<i class="fa fa-expand"></i>
+								<i class="fa fa-compress"></i>
+							</li>
+						</ul>
+					</section>
+					<section class="self-intro">
+						<p>"故不积跬步，无以至千里；不积小流，无以成江海。"好好学习，天天向上。热爱生活，认真工作。为成为一名优秀的程序员而努力奋斗。</p>
+					</section>
+					<section class="comments">
+						<ul></ul>
+						<div class="button">
+							<a href="#message/1">
+								<i class="fa fa-bars"></i>查看更多
+							</a>
+							<a href="#message/1">
+								<i class="fa fa-pencil-square-o"></i>写新留言
+							</a>
+						</div>
+					</section>
+					<section class="study">
+						<a href="http://www.acfun.cn/" targe="_blank" class="logo"><img src="images/acfun_logo.png"></a>
+						<ul class="study-list">
+						</ul>
+						<p>fun一下。<font class="study-reload">换一批</font></p>
+					</section>
+					<section class="footer">
+						<p>Sasukei's blog powered by nodejs.</p>
+					</section>
+				</div>
+			</div>
+		</header>
+		<div class="container main">
+		</div>
+	</body>
+	<script src="script/lib/bowl/bowl.js"></script>
+	<script>
+		bowljs.config({
+			libPath: 'script/lib',
+			appPath: 'script/app',
+			debug: false
+		});
+		require('/main/');
+	</script>
+</html><!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,">
+		<meta name="format-detection" content="telephone=no" />
+		<meta charset="UTF-8">
+		<meta name="description" content="sasukei | 徐文的个人博客">
+		<meta name="Keywords" Content="sasukei,徐文,博客,前端">
+		<link href="style/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style/index.css">
+		<link href="favicon.ico" rel="shortcut icon">
+	</head>
+	<body>
+		<header id="header" class="layer0">
+			<div class="header-wrapper">
+				<div class="spinner-icon"></div>
+				<div class="header-content">
+					<section class="describe">
+						<img src="images/avatar.jpg">
+						<a href="#page/1">
+							<hgroup>
+								<h1>徐文的博客</h1>
+								<h2>Sasukei's Blog</h2>
+							</hgroup>
+						</a>
+					</section>
+					<section class="switch-board">
+						<ul>
+							<li data-title="返回主页">
+								<i class="fa fa-home" module="page/1"></i>
+							</li>
+							<li data-title="留言版">
+								<i class="fa fa-comments" module="message/1"></i>
+							</li>
+							<li data-title="切换字体风格">
+								<i class="fa fa-font"></i>
+							</li>
+							<li data-title="夜间模式">
+								<i class="fa fa-moon-o"></i>
+							</li>
+							<li data-title="我的游戏">
+								<a href="/game/game.html" target="_blank"><i class="fa fa-gamepad"></i></a>
+							</li>
+							<li data-title="全屏模式">
+								<i class="fa fa-expand"></i>
+								<i class="fa fa-compress"></i>
+							</li>
+						</ul>
+					</section>
+					<section class="self-intro">
+						<p>"故不积跬步，无以至千里；不积小流，无以成江海。"好好学习，天天向上。热爱生活，认真工作。为成为一名优秀的程序员而努力奋斗。</p>
+					</section>
+					<section class="comments">
+						<ul></ul>
+						<div class="button">
+							<a href="#message/1">
+								<i class="fa fa-bars"></i>查看更多
+							</a>
+							<a href="#message/1">
+								<i class="fa fa-pencil-square-o"></i>写新留言
+							</a>
+						</div>
+					</section>
+					<section class="study">
+						<a href="http://www.acfun.cn/" targe="_blank" class="logo"><img src="images/acfun_logo.png"></a>
+						<ul class="study-list">
+						</ul>
+						<p>fun一下。<font class="study-reload">换一批</font></p>
+					</section>
+					<section class="footer">
+						<p>Sasukei's blog powered by nodejs.</p>
+					</section>
+				</div>
+			</div>
+		</header>
+		<div class="container main">
+		</div>
+	</body>
+	<script src="script/lib/bowl/bowl.js"></script>
+	<script>
+		bowljs.config({
+			libPath: 'script/lib',
+			appPath: 'script/app',
+			debug: false
+		});
+		require('/main/');
+	</script>
+</html><!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,">
+		<meta name="format-detection" content="telephone=no" />
+		<meta charset="UTF-8">
+		<meta name="description" content="sasukei | 徐文的个人博客">
+		<meta name="Keywords" Content="sasukei,徐文,博客,前端">
+		<link href="style/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style/index.css">
+		<link href="favicon.ico" rel="shortcut icon">
+	</head>
+	<body>
+		<header id="header" class="layer0">
+			<div class="header-wrapper">
+				<div class="spinner-icon"></div>
+				<div class="header-content">
+					<section class="describe">
+						<img src="images/avatar.jpg">
+						<a href="#page/1">
+							<hgroup>
+								<h1>徐文的博客</h1>
+								<h2>Sasukei's Blog</h2>
+							</hgroup>
+						</a>
+					</section>
+					<section class="switch-board">
+						<ul>
+							<li data-title="返回主页">
+								<i class="fa fa-home" module="page/1"></i>
+							</li>
+							<li data-title="留言版">
+								<i class="fa fa-comments" module="message/1"></i>
+							</li>
+							<li data-title="切换字体风格">
+								<i class="fa fa-font"></i>
+							</li>
+							<li data-title="夜间模式">
+								<i class="fa fa-moon-o"></i>
+							</li>
+							<li data-title="我的游戏">
+								<a href="/game/game.html" target="_blank"><i class="fa fa-gamepad"></i></a>
+							</li>
+							<li data-title="全屏模式">
+								<i class="fa fa-expand"></i>
+								<i class="fa fa-compress"></i>
+							</li>
+						</ul>
+					</section>
+					<section class="self-intro">
+						<p>"故不积跬步，无以至千里；不积小流，无以成江海。"好好学习，天天向上。热爱生活，认真工作。为成为一名优秀的程序员而努力奋斗。</p>
+					</section>
+					<section class="comments">
+						<ul></ul>
+						<div class="button">
+							<a href="#message/1">
+								<i class="fa fa-bars"></i>查看更多
+							</a>
+							<a href="#message/1">
+								<i class="fa fa-pencil-square-o"></i>写新留言
+							</a>
+						</div>
+					</section>
+					<section class="study">
+						<a href="http://www.acfun.cn/" targe="_blank" class="logo"><img src="images/acfun_logo.png"></a>
+						<ul class="study-list">
+						</ul>
+						<p>fun一下。<font class="study-reload">换一批</font></p>
+					</section>
+					<section class="footer">
+						<p>Sasukei's blog powered by nodejs.</p>
+					</section>
+				</div>
+			</div>
+		</header>
+		<div class="container main">
+		</div>
+	</body>
+	<script src="script/lib/bowl/bowl.js"></script>
+	<script>
+		bowljs.config({
+			libPath: 'script/lib',
+			appPath: 'script/app',
+			debug: false
+		});
+		require('/main/');
+	</script>
+</html><!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,">
+		<meta name="format-detection" content="telephone=no" />
+		<meta charset="UTF-8">
+		<meta name="description" content="sasukei | 徐文的个人博客">
+		<meta name="Keywords" Content="sasukei,徐文,博客,前端">
+		<link href="style/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style/index.css">
+		<link href="favicon.ico" rel="shortcut icon">
+	</head>
+	<body>
+		<header id="header" class="layer0">
+			<div class="header-wrapper">
+				<div class="spinner-icon"></div>
+				<div class="header-content">
+					<section class="describe">
+						<img src="images/avatar.jpg">
+						<a href="#page/1">
+							<hgroup>
+								<h1>徐文的博客</h1>
+								<h2>Sasukei's Blog</h2>
+							</hgroup>
+						</a>
+					</section>
+					<section class="switch-board">
+						<ul>
+							<li data-title="返回主页">
+								<i class="fa fa-home" module="page/1"></i>
+							</li>
+							<li data-title="留言版">
+								<i class="fa fa-comments" module="message/1"></i>
+							</li>
+							<li data-title="切换字体风格">
+								<i class="fa fa-font"></i>
+							</li>
+							<li data-title="夜间模式">
+								<i class="fa fa-moon-o"></i>
+							</li>
+							<li data-title="我的游戏">
+								<a href="/game/game.html" target="_blank"><i class="fa fa-gamepad"></i></a>
+							</li>
+							<li data-title="全屏模式">
+								<i class="fa fa-expand"></i>
+								<i class="fa fa-compress"></i>
+							</li>
+						</ul>
+					</section>
+					<section class="self-intro">
+						<p>"故不积跬步，无以至千里；不积小流，无以成江海。"好好学习，天天向上。热爱生活，认真工作。为成为一名优秀的程序员而努力奋斗。</p>
+					</section>
+					<section class="comments">
+						<ul></ul>
+						<div class="button">
+							<a href="#message/1">
+								<i class="fa fa-bars"></i>查看更多
+							</a>
+							<a href="#message/1">
+								<i class="fa fa-pencil-square-o"></i>写新留言
+							</a>
+						</div>
+					</section>
+					<section class="study">
+						<a href="http://www.acfun.cn/" targe="_blank" class="logo"><img src="images/acfun_logo.png"></a>
+						<ul class="study-list">
+						</ul>
+						<p>fun一下。<font class="study-reload">换一批</font></p>
+					</section>
+					<section class="footer">
+						<p>Sasukei's blog powered by nodejs.</p>
+					</section>
+				</div>
+			</div>
+		</header>
+		<div class="container main">
+		</div>
+	</body>
+	<script src="script/lib/bowl/bowl.js"></script>
+	<script>
+		bowljs.config({
+			libPath: 'script/lib',
+			appPath: 'script/app',
+			debug: false
+		});
+		require('/main/');
+	</script>
+</html>
